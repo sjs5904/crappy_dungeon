@@ -10,11 +10,11 @@ Had a segmentation issue associated with io_nearest_visible_monster, but seems t
 
 ### Change Log
 
-1/20/2018: isSafe, generateRoom 함수 추가. 방 생성 가능.
+1/20/2018: isSafe, generateRoom 함수 추가. 방 생성 가능.  
 1/21/2018: 오타 수정, 실행 속도 개선  
 1/22/2018: 간단한 길찾기 알고리즘 구현. struct 어레이 정렬하는 함수 추가.  
-1/23/2018: generateCorridor, draw 함수 추가. 길찾기 알고리즘을 이용해서 방 구역간 복도 생성 가능.
-1/23/2018: segmentation fault 에러 해결. 메모리 문제 개선.
+1/23/2018: generateCorridor, draw 함수 추가. 길찾기 알고리즘을 이용해서 방 구역간 복도 생성 가능.  
+1/23/2018: segmentation fault 에러 해결. 메모리 문제 개선.  
 1/29/2018: dungeon struct 추가. map data 삭제. init_dungeon, load_dungeon, render_dungeon 추가.  
 1/30/2018: 세이브 로드 기능 추가.  
 1/30/2018: 불러오기 도중에 뜨는 segmentation fault 에러 해결.  
