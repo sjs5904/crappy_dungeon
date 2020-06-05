@@ -1,6 +1,7 @@
 # 던전크롤러
 
 ### 시작 초기화면
+@가 캐릭터에 지정된 기호입니다.
 ![start](https://user-images.githubusercontent.com/49792776/83842386-cf3dd100-a73d-11ea-9c21-dcd52504539b.PNG)
 ### 생성된 전체 맵
 ![map](https://user-images.githubusercontent.com/49792776/83842404-d9f86600-a73d-11ea-99e5-88ff6037350e.PNG)
