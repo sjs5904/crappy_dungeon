@@ -1,0 +1,10 @@
+Jooseung Song, ID: 351320970
+14/4/2018: Starting work based on last assignment
+15/4/2018: Added ter_water, ter_lava
+15/4/2018: Added place_lava_water
+16/4/2018: Modified move_character to make ter_water, ter_lava work
+16/4/2018: Modified move_character and added regenerating function
+16/4/2018: Added info in io.cpp
+17/4/2018: Fixed segmentation issue associated with io_nearest_visible_monster
+17/4/2018: Added 'c' key to work with info function
+17/4/2018: Updated readme.
