@@ -1,3 +1,17 @@
+# 던전크롤러
+
+### 시작 초기화면
+![start](https://user-images.githubusercontent.com/49792776/83842386-cf3dd100-a73d-11ea-9c21-dcd52504539b.PNG)
+### 생성된 전체 맵
+![map](https://user-images.githubusercontent.com/49792776/83842404-d9f86600-a73d-11ea-99e5-88ff6037350e.PNG)
+### 전장의 안개
+시야로 보이는 곳은 굵은 폰트로 표시되어있고 탐험한적 없는 지역은 보이지 않습니다.
+![fog](https://user-images.githubusercontent.com/49792776/83842407-db299300-a73d-11ea-841d-df5423064d21.PNG)
+### 장비창
+![ui](https://user-images.githubusercontent.com/49792776/83842409-dcf35680-a73d-11ea-8898-4e7a4cf7c621.PNG)
+### 게임오버
+![end](https://user-images.githubusercontent.com/49792776/83842412-dd8bed00-a73d-11ea-85b8-5e0fa6222492.PNG)
+
 ### 사용한 프로그램
 
 1. Notepad++  
