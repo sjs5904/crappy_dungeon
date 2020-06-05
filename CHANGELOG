@@ -1,0 +1,55 @@
+Jooseung Song, ID: 351320970
+1/20/2018: Added isSafe and generateRoom function. Can now print layouts and place rooms.
+1/21/2018: Fixed simple typo and reduced run time
+1/22/2018: Tried to make simple pathfinding code. Function sort added, changed int array map to struct array.
+1/23/2018: Added generateCorridor and draw function.
+1/23/2018: Fixed segmentation fault error.
+1/29/2018: Added dungeon structure. Deleted public map data. Added init_dungeon, load_dungeon, render_dungeon.
+1/30/2018: Added save and load. Can execute both at a time. Seems fine when running with single source code.
+1/30/2018: Fixed segmentation faults on running load function.
+2/05/2018: Starting work based on professor Sheaffer's work which was distributed through canvas.
+2/05/2018: Added PC structure, modified dungeon structure
+2/10/2018: Added dijkstra_path and dijkstra_path_t function based on dijkstra_corridor function.
+2/12/2018: Fixed dijkstra_path and dijkstra_path_t, added distance comparing functions.
+2/12/2018: Modified place_room and fixed infinite loop.
+2/12/2018: Modified render_dungeon function to add PC.
+2/12/2018: Added place_PC function and modified main.
+2/13/2018: Added render_distance_map and render_tunnel_distance_map.
+2/18/2018: Starting work based on professor Sheaffer's work which was distributed through canvas.
+2/18/2018: Fixed infinite loop.
+2/19/2018: Modified render_dungeon.
+2/19/2018: Added 8 move functions and modified main.
+2/25/2018: Starting work based on last assignment
+2/26/2018: Applied Ncurses modified most c files as followed.
+3/3/2018: Deleted random PC movement and PC now cannot tunnel.
+3/4/2018: Added key-map and modified main fuction. 
+3/4/2018: Added menu function.
+3/5/2018: Cannot get arrow-keys with getch()
+3/6/2018: Finished working on menu.
+3/16/2018: Starting work based on last assignment
+3/19/2018: Changed most of C files to C++ except rgl327.c
+3/19/2018: Fog of war working
+3/20/2018: 'f' key and teleport mode working
+3/20/2018: seg fault issue partially fixed
+3/25/2018: Starting work based on last assignment
+3/27/2018 Wrote all code to read and display everything from txt file
+4/1/2018: Starting work based on last assignment
+4/2/2018: Added object class
+4/3/2018: Modified display function to add colors
+4/3/2018: Modified can_see, gen_monster. 
+4/3/2018: Added gen_object function from gen_monster.
+4/9/2018: Starting work based on last assignment
+4/9/2018: Added io_list_inventory, io_list_equuipment
+4/9/2018: Modified description class
+4/9/2018: Modified do_combat
+4/10/2018: Added io_look class
+4/10/2018: Added pc_addCarry, pc_dropItem, pc_wear, pc_takeOff, pc_inspect, pc_update
+4/10/2018: Added all keys
+4/14/2018: Starting work based on last assignment
+4/15/2018: Added ter_water, ter_lava
+4/15/2018: Added place_lava_water
+4/16/2018: Modified move_character to make ter_water, ter_lava work
+4/16/2018: Modified move_character and added regenerating function
+4/16/2018: Added info in io.cpp
+4/17/2018: Fixed segmentation issue associated with io_nearest_visible_monster
+4/17/2018: Added 'c' key to work with info function

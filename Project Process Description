@@ -1,0 +1,120 @@
+COM S 327
+Assignment#1.10
+Jooseung Song
+rlg327.cpp
+
+==1.01===========================================================================================================================================
+
+Type bool defined. false = 0, true = 1
+
+Using struct Tile and 'hardness' variable to add complexity and expandability
+
+bool isSafe(Room t)
+Takes coordinates and size of a room to be added and check if there is any other room inside.
+
+bool generateRoom(Room *r, int a, int s, int seed)
+Room *r: save rooms added
+int a: parameter to spread rooms wide
+int s: total number of rooms to add
+int seed: generate different room everytime generateRoom runs
+
+bool draw(Tile a, Tile b, Tile p)
+Draw Corridor from Tile a to Tile b
+Tile p is previous Tile a to avoid infinite loop
+
+void generateCorridor(Room *r, int s)
+For every rooms in array r, draw corridor
+Connect r[n] with r[n+1]
+Added two more corridors to make it look not linear.
+
+void sort(Room *r, int s)
+sort array of rooms by x-coordinates of rooms.
+
+
+==1.02===========================================================================================================================================
+
+void render_dungeon(dungeon_t *d)
+Print dungeon_t
+
+int load_dungeon(uint8_t hardnessArr[1700], uint8_t roomsArr[], int h, int r, dungeon_t *d)
+Get hardnessArr,roomsArr from load(dungeon_t *d). Give data to dungeon_t and draw room.
+
+int init_dungeon(dungeon_t *d, int seed)
+Empty the dungeon. Give tiles (x,y) pairs.
+Initailize the dungeon only with walls and immutable cells.
+
+
+==1.03===========================================================================================================================================
+
+When run, should generate a dungeon, calculate all distance maps, render all three views of the dungeon, and exit.
+Started this assignment#1.03 with the code uploaded in canvas. Added functions based on the base code and lectures.
+Tunneling costs more according to hardness. Cost of tunneling is basically hardness/85.
+Had not much time to test, but it seems to work.
+
+-render_distance_map(dungeon_t *d), render_tunnel_distance_map(dungeon_t *d)
+Built based on render_dungeon
+Print distance from @(PC)
+
+-dijkstra_path and dijkstra_path_t
+Built based on dijkstra_corridor
+Calculate all 8 directions
+Built new distance comparing functions for heap_init
+
+-place_room
+empty_dungeon takes too much time
+Changed it to reset only terrains, keeping hardness map
+
+
+==1.04===========================================================================================================================================
+
+-8 move_ functions
+added characteristics to monsters 
+
+
+==1.05===========================================================================================================================================
+
+I added stairs, menu, and key-map. Going up and down the stairs will
+generate random dungeon, and it does not remember previous dungeon. I deleted random movement
+of PC, and I made PC unable to tunnel. I struggled adding menu, because I did not remember that
+how to read special keys with getch(). Added code for stairs in config_pc function. Store list
+of monsters in list struct in gen_monsters function.
+
+void menu(dungeon *d)
+- goes into full menu screen. Print some outline and 6 lines of monster distance from PC.
+Arrowkey UP and DOWN can scroll the list.
+
+
+==1.06===========================================================================================================================================
+
+Tried to convert all C files to C++, could not finish rlg327. Fog of war, 'f' key and 't'(teleport mode) key works as intended, 
+but d->room causes segmentation fault. Seems compile and link works correctly. PC currently has 7x7 sight range. 
+It will have 5x5 sight range if you change PC_SIGHT_RANGE to 2.
+
+
+==1.07===========================================================================================================================================
+
+Read the txt file line by line and print. Tried to have all fucntionalities, but failed. 
+Therefore codes are rolled backed to primitive form.
+
+
+==1.08===========================================================================================================================================
+
+Added color and objects to the game. Monsters now take random attributes from description file.
+I think I added most of the features described in the assignment pdf. Some codes are poorly modified
+just to avoid error. Changed description file location.
+
+
+==1.09===========================================================================================================================================
+
+Added pc_addCarry, pc_dropItem, pc_wear, pc_takeOff, pc_inspect, pc_update, io_list_inventory, io_list_equuipment, io_look, and some more.
+All keys seems to work fine. Modified move_character and now monsters cannot kill each other. PC has 10 hp will die if damageDone exceeds.
+
+
+==1.10===========================================================================================================================================
+
+Added place_lava_water. characters lose 2 hp on lava and lose 2 speed on water.
+PC regenerate 2 hp every 5 step. press 'c' to see description of anything in selected cell
+Had a segmentation issue associated with io_nearest_visible_monster, but seems to be resolved.
+
+
+==End of Project=================================================================================================================================
