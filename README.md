@@ -5,6 +5,8 @@
 ![start](https://user-images.githubusercontent.com/49792776/83842386-cf3dd100-a73d-11ea-9c21-dcd52504539b.PNG)
 ### 생성된 전체 맵
 ![map](https://user-images.githubusercontent.com/49792776/83842404-d9f86600-a73d-11ea-99e5-88ff6037350e.PNG)
+알파벳은 적들이고 =,/같은 기호들은 아이템입니다.  
+각각의 다른 적들은 서로 다른 방식으로 움직입니다.  
 ### 전장의 안개
 시야로 보이는 곳은 굵은 폰트로 표시되어있고 탐험한적 없는 지역은 보이지 않습니다.
 ![fog](https://user-images.githubusercontent.com/49792776/83842407-db299300-a73d-11ea-841d-df5423064d21.PNG)
